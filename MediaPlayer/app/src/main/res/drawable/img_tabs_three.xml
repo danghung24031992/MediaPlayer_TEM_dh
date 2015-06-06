@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/bt_mymusic_navigation_onlinemusic_press" android:state_selected="true" />
+    <item android:drawable="@mipmap/bt_mymusic_navigation_onlinemusic_press" android:state_pressed="true" android:state_selected="false" />
+    <item android:drawable="@mipmap/bt_mymusic_navigation_onlinemusic_nor" android:state_pressed="false" android:state_selected="false" />
+</selector>

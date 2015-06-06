@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical"
+    android:padding="5dip" >
+    <LinearLayout
+        android:id="@+id/layout_baihat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_home_indicator"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_home_offline_img"
+            android:layout_weight="2"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:paddingRight="-3dp"
+            android:paddingLeft="-3dp"
+            android:src="@mipmap/arrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bài Hát"
+            android:layout_weight="8"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_nghe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_home_indicator"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout_baihat"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_home_offline_img"
+            android:layout_weight="2"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:paddingRight="-3dp"
+            android:paddingLeft="-3dp"
+            android:src="@mipmap/bg_progress" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nghe tất cả"
+            android:layout_weight="8"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <!-- Title Of Song-->
+
+
+    <ImageButton
+        android:id="@+id/imageChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bt_mymusic_navigation_mymusic_press"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/layout_baihat"
+        />
+    <ListView
+        android:layout_below="@+id/layout_nghe"
+        android:id="@+id/listbaihat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        />
+     <Button
+         android:onClick="addSong"
+         android:id="@+id/buttonthembaihat"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Them bai hat"
+         android:layout_below="@+id/layout_nghe"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         />
+
+</RelativeLayout>

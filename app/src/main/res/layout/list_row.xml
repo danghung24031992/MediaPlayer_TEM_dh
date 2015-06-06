@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical"
+    android:padding="5dip" >
+    <LinearLayout
+        android:id="@+id/layout_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_home_indicator"
+        android:orientation="horizontal"
+        android:onClick="onPlayClickBack">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_home_offline_img"
+            android:layout_weight="2"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:paddingRight="-3dp"
+            android:paddingLeft="-3dp"
+            android:src="@mipmap/arrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Playlist"
+            android:layout_weight="8"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <!-- Title Of Song-->
+
+
+    <ImageButton
+       android:id="@+id/imageChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/button_triangle_list_white"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:onClick="onNewPlayList"/>
+
+
+
+
+      
+
+
+</RelativeLayout>

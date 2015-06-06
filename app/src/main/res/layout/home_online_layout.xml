@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_home_ofline"
+    android:padding="1dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Online"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_home_indicator"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_home_offline_img"
+            android:layout_weight="2"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:src="@mipmap/nhactuithich" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhạc Tui Thích"
+            android:layout_weight="8"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="27dp"
+            android:src="@mipmap/ic_songlist_detail" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_home_indicator"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_home_offline_img"
+            android:layout_weight="2"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:paddingRight="-3dp"
+            android:paddingLeft="-3dp"
+            android:src="@mipmap/nhaccuatui" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhạc Của Tui"
+            android:layout_weight="8"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="27dp"
+            android:src="@mipmap/ic_songlist_detail" />
+    </LinearLayout>
+
+</LinearLayout>

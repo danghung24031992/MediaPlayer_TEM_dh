@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f6f5"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:id="@+id/playminibar1"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_minibar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="24dp"
+                android:text="Khuôn mặt đáng"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="0dp"
+                android:text="Sơn Tùng - MTP"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:paddingTop="10dp">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:paddingTop="4dp"
+            android:src="@mipmap/bt_minibar_playlist_nor"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:src="@mipmap/bt_minibar_play_nor"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:paddingTop="4dp"
+            android:src="@mipmap/bt_minibar_play_nor"
+            android:layout_weight="1"/>
+        </LinearLayout>
+
+</LinearLayout>

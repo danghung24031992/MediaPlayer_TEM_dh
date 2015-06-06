@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Media Player</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_tabs_nav_one">Của Tui</string>
+    <string name="title_tabs_nav_two">Thiết Bị</string>
+    <string name="title_tabs_nav_three">Online</string>
+    <string name="title_tabs_sub_one">Bài Hát</string>
+    <string name="title_tabs_sub_two">Album</string>
+    <string name="title_tabs_sub_three">Nghệ Sĩ</string>
+    <string name="title_tabs_sub_four">Folder</string>
+    <string name="hint_search">Tìm kiếm</string>
+    <string name="network_error">Mất kết nối,vui lòng thử lại</string>
+    <string name="title_tabs_sub_online_one">Bài Hát</string>
+    <string name="title_tabs_sub_online_two">Nhạc Sĩ</string>
+    <string name="title_tabs_sub_online_three">Thể Loại</string>
+    <string name="title_tabs_sub_online_four">Ca Sĩ</string>
+    <color name="white">#ffffff</color>
+    <string name="back">Back</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="player">Audio Player</string>
+    <string name="next">Next</string>
+    <string name="open_playlist">Open Playlist</string>
+    <string name="idle">Idle</string>
+    <string name="empty_text">Select song from below to play</string>
+    <string name="player_button">Album Art Screen</string>
+    <string name="add_data_toast">Thêm dữ liệu thành công</string>
+    <string name="add_toast">Cập nhật thành công</string>
+</resources>

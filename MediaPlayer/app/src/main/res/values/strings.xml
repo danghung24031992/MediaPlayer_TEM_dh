@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MediaPlayer</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_tabs_nav_one">Của Tui</string>
+    <string name="title_tabs_nav_two">Thiết Bị</string>
+    <string name="title_tabs_nav_three">Online</string>
+</resources>

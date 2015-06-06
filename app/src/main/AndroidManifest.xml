@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dh.mediaplayer">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlayMusicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlayMusic.PlayListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_handler_online.Artist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_handler_online.Category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_handler_online.Composer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlaySlidePagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_handler_offline.Album_Action"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".playlist.ActivityAddSongs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".playlist.List_baihat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".playlist.List_PlayList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".playlist.AddSongs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".notification.AudioPlayerActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <service android:name=".notification.SongService" />
+
+        <receiver android:name=".notification.NotificationBroadcast">
+            <intent-filter>
+                <action android:name="audioplayer.delete" />
+                <action android:name="audioplayer.pause" />
+                <action android:name="audioplayer.next" />
+                <action android:name="audioplayer.play" />
+                <action android:name="audioplayer.previous" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
