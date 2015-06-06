@@ -40,7 +40,6 @@ public class MainActivity extends FragmentActivity {
     static ImageButton btnDelete;
 
     static ImageView imgvSong;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
